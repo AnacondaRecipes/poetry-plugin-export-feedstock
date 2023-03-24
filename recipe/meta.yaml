@@ -18,7 +18,7 @@ requirements:
   host:
     - python
     - pip
-    - poetry-core 1.5.1
+    - poetry-core
     - setuptools
     - wheel
   run:
