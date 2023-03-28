@@ -46,7 +46,7 @@ test:
     - pip check | rg -F "requires poetry, which is not installed."
     # Ensure pip check does not output anything else. (This includes
     # "No broken requirements found." -- a signal to update the recipe ;)
-    - "! pip check | grep -Fv "requires poetry, which is not installed."  # [not win]
+    - "! pip check | grep -Fv 'requires poetry, which is not installed.'"  # [not win]
   requires:
     - pip
     - ripgrep
