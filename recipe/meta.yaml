@@ -12,13 +12,13 @@ source:
 build:
   skip: true  # [py<37]
   script: {{ PYTHON }} -m pip install . -vv --no-deps
-  number: 0
+  number: 1
 
 requirements:
   host:
     - python
     - pip
-    - poetry-core 1.5.1
+    - poetry-core 1.5
     - setuptools
     - wheel
   run:
